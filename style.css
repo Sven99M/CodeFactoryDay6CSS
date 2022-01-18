@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: slateblue;
+}
+
+.navbar {
+    display: flex;
+    justify-content: center;
+    background-color: midnightblue;
+    color: white;
+}
+
+li {
+    list-style: none;
+    padding: 20px;
+    font-size: 1.5em;
+    text-transform: uppercase;
+}
+
+#home>a,
+#home {
+    cursor: pointer;
+    transition: ease-in 0.2s;
+}
+
+#home>a:hover,
+#home:hover {
+    transform: scale(1.5);
+}
+
+#about>a,
+#about {
+    cursor: pointer;
+    transition: ease-out 0.3s;
+}
+
+#about>a:hover,
+#about:hover {
+    transform: rotate(360deg);
+}
+
+#shop>a,
+#shop {
+    cursor: pointer;
+    transition: ease-out 1s;
+}
+
+#shop>a:hover,
+#shop:hover {
+    transform: skewY(-20deg);
+}
+
+#contact>a,
+#contact {
+    cursor: pointer;
+    transition: ease-out 0.3s;
+}
+
+#contact>a:hover,
+#contact:hover {
+    transform: rotate(360deg);
+}
+
+#imprint>a,
+#imprint {
+    cursor: pointer;
+    transition: ease-in 0.2s;
+}
+
+#imprint>a:hover,
+#imprint:hover {
+    transform: scale(1.5);
+}
+
+.container {
+    justify-content: center;
+    flex-wrap: wrap;
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(8, 10%);
+    grid-template-rows: repeat(8, 10%);
+    margin-top: 20px;
+}
+
+.container div {
+    border: midnightblue 1px solid;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.box1 {
+    grid-column: 1/5;
+    grid-row: 1/3;
+}
+
+.box2 {
+    grid-column: 5/9;
+    grid-row: 1/5;
+}
+
+.box3 {
+    grid-column: 1/3;
+    grid-row: 3/5;
+}
+
+.box4 {
+    grid-column: 3/5;
+    grid-row: 3/5;
+}
+
+.box5 {
+    grid-column: 1/5;
+    grid-row: 5/7;
+}
+
+.box6 {
+    grid-column: 5/9;
+    grid-row: 5/7;
+}
+
+.box7 {
+    grid-column: 1/9;
+    grid-row: 7/9;
+}
+
+footer {
+    text-align: center;
+    background-color: midnightblue;
+    color: white;
+    padding: 20px;
+}
